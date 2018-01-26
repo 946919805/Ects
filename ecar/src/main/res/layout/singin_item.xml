@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/singin_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/round_shopcar_bg"
+    android:orientation="vertical"
+    android:padding="1dp"
+    >
+
+    <LinearLayout
+        android:id="@+id/one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:background="@drawable/item_round_bg"
+        android:orientation="horizontal">
+
+        <TextView
+
+           style="@style/text_tittle_sty"
+            android:text="调度号:"
+             />
+
+        <TextView
+            android:id="@+id/no"
+            style="@style/text_sty"
+            android:text="TextView"
+            />
+        <TextView
+            android:id="@+id/textView"
+            style="@style/text_tittle_sty"
+            android:text="调度日期:"
+            />
+
+        <TextView
+            android:id="@+id/date"
+            style="@style/text_sty"
+            android:text="TextView"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/text_gray"
+        android:layout_below="@id/one"
+
+        android:orientation="horizontal">
+
+        <TextView
+           style="@style/text_tittle_sty"
+            android:text="调度网点"
+            />address
+
+        <TextView
+            android:id="@+id/address"
+           style="@style/text_sty"
+            android:layout_toRightOf="@+id/textView_1"
+
+            android:text="TextView"
+             />
+
+
+
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/image_ico"
+        android:layout_alignParentRight="true"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@mipmap/make_cargo"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"/>
+    <com.gzdc.ecar.View.ChildListView
+        android:layout_below="@+id/two"
+        android:id="@+id/listView_child"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    </com.gzdc.ecar.View.ChildListView>
+
+</RelativeLayout>

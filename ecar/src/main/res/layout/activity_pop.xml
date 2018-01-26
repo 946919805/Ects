@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_pop"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="10dp"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context="com.gzdc.ecar.Activity.PopActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+
+        android:text="网点选择" />
+
+    <TextView
+        android:id="@+id/codeone"
+        style="@style/spinerStylr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:drawableRight="@drawable/spiner_selector" />
+
+
+    <TextView
+        android:id="@+id/code"
+        style="@style/spinerStylr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/spiner_selector" />
+
+
+    <TextView
+        android:id="@+id/areacode"
+        style="@style/spinerStylr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/spiner_selector" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/input_sure"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/round_corner_bg"
+            android:text="确认"
+            android:textColor="@color/line_color" />
+
+        <Button
+            android:id="@+id/input_cancel"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:background="@drawable/round_corner_bg"
+            android:text="取消"
+            android:textColor="@color/line_color" />
+    </LinearLayout>
+</LinearLayout>

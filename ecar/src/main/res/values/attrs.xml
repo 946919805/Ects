@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TitelBar">
+        <attr name="titelbar_center_hint" format="string" />
+
+    </declare-styleable>
+
+    <declare-styleable name="SearchBar">
+        <attr name="searchbar_right_text" format="string" />
+        <attr name="searchbar_center_hint" format="string" />
+
+    </declare-styleable>
+
+
+    <declare-styleable name="SearchEditText">
+
+    </declare-styleable>
+
+    <declare-styleable name="roundedimageview">
+        <attr name="border_thickness" format="dimension" />
+        <attr name="border_inside_color" format="color" />
+        <attr name="border_outside_color" format="color"></attr>
+    </declare-styleable>
+</resources>

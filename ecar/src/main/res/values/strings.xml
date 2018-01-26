@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">城配货运</string>
+    <string name="index_home">首页</string>
+    <string name="index_mytask">我的任务</string>
+    <string name="index_mynear">附近运单</string>
+    <string name="index_mysingfor">运单签收</string>
+    <string name="index_my">我的</string>
+    <string name="my_text_login">登录</string>
+    <string name="my_text_register">注册</string>
+    <string name="next">下一步</string>
+    <string name="sure">收货</string>
+    <string name="address">填写地址</string>
+    <string name="delivery">送达</string>
+    <string name="task">已完成任务</string>
+    <string name="untask">未完成任务</string>
+    <string name="tapproved_Task">已审核任务</string>
+    <string name="offline_map">离线地图</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="baoban">报班</string>
+    <string name="baojin">报警</string>
+    <string name="map_manage">地图管理</string>
+    <string name="cancle">取消</string>
+    <string name="receiving_party">收货方</string>
+    <string name="consigner">发货方</string>
+    <string name="goods_name">货物名称</string>
+    <string name="weight">重量</string>
+    <string name="number">数量</string>
+    <string name="vol">体积</string>
+    <string name="quit">退出</string>
+    <item type="id" name="tag_first">first</item>
+    <item type="id" name="tag_second">two</item>
+    <item type="id" name="tag_three">three</item>
+    <item type="id" name="tag_four">four</item>
+</resources>

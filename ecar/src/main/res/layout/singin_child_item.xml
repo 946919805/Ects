@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:orientation="horizontal">
+
+        <TextView
+
+            style="@style/text_tittle_sty"
+            android:text="单号："
+            android:textColor="@color/text_red" />
+
+        <TextView
+            android:id="@+id/clientbill"
+            style="@style/text_sty"
+            android:lines="1"
+            android:text="asd324234444"
+            android:textColor="@color/text_red" />
+
+        <!--  <TextView
+
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="0.15"
+              android:textColor="@color/list_text_color"
+              android:text="联系人："
+              android:id="@+id/textView3" />
+
+          <TextView
+              android:id="@+id/ssss"
+
+              android:textColor="@color/list_text_color"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="0.35"
+              android:lines="1"
+              android:text="肖生克"
+              />
+  -->
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:orientation="horizontal">
+
+        <TextView
+
+            style="@style/text_tittle_sty"
+            android:text="联系人："
+            android:textColor="@color/list_text_color" />
+
+        <TextView
+            android:id="@+id/linkman"
+            style="@style/text_sty"
+            android:text="np1231231231"
+            android:textColor="@color/list_text_color" />
+
+        <TextView
+
+            android:id="@+id/textView4"
+            style="@style/text_tittle_sty"
+            android:text="电话："
+            android:textColor="@color/list_text_color" />
+
+        <TextView
+            android:id="@+id/linktel"
+          style="@style/text_sty"
+            android:lines="1"
+            android:text="15922223333"
+            android:textColor="@color/list_text_color" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/text_tittle_sty"
+            android:text="地址："
+            android:textColor="@color/list_text_color" />
+
+        <TextView
+            android:id="@+id/address"
+          style="@style/text_sty"
+            android:layout_toRightOf="@+id/textView_1"
+
+            android:text="广州市艺苑南路13号大院"
+            android:textColor="@color/list_text_color" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <Button
+            android:id="@+id/sign_for"
+            style="@style/button_sty"
+            android:text="签收"
+            />
+        <Button
+            android:id="@+id/uploding_bill"
+            style="@style/button_sty"
+            android:text="上传"/>
+        <Button
+            android:id="@+id/back_bill"
+            style="@style/button_sty"
+            android:text="回单"/>
+    </LinearLayout>
+</LinearLayout>

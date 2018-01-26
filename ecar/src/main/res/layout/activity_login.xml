@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@mipmap/login_background_xy"
+    android:gravity="center_horizontal"
+    tools:context="com.gzdc.ecar.Activity.Login_Activity">
+
+
+
+
+
+    <EditText
+        android:id="@+id/Wear_login_user"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginLeft="42dp"
+        android:layout_marginRight="42dp"
+        android:layout_marginTop="170dp"
+        style="@style/Login_type"
+        android:background="@drawable/login_editext"
+        android:gravity="center"
+        android:hint="请输入手机号码"
+        android:textColorHint="#e1e1e1" />
+
+    <EditText
+        android:id="@+id/Wear_login_pass"
+        style="@style/Login_type"
+        android:layout_below="@+id/Wear_login_user"
+        android:layout_marginTop="42dp"
+        android:hint="请输入密码"
+        android:inputType="textPassword"
+        android:textColorHint="#e1e1e1" />
+
+
+    <Button
+        android:id="@+id/bt_login"
+        style="@style/Login_type"
+        android:layout_below="@+id/Wear_login_pass"
+        android:layout_marginTop="30dp"
+        android:background="@mipmap/login_button"
+        android:text="@string/my_text_login" />
+    <Button
+        android:id="@+id/bt_register"
+        style="@style/Login_type"
+        android:layout_below="@+id/bt_login"
+        android:layout_marginTop="30dp"
+        android:background="@mipmap/login_button"
+        android:text="@string/my_text_register"  />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bt_login"
+        android:layout_alignRight="@+id/bt_login"
+        android:layout_below="@id/bt_register"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:text="忘记密码？"
+            android:gravity="right"
+            android:textColor="#056cec"
+            android:textSize="26px" />
+
+    </RelativeLayout>
+</RelativeLayout>

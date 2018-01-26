@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/round_shopcar_bg">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/text_tittle_sty"
+
+            android:text="货物名称：" />
+
+        <TextView
+            android:id="@+id/itemname"
+            style="@style/text_sty"
+            android:text="TextView" />
+
+
+    </LinearLayout>
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal">
+
+        <TextView
+
+
+            style="@style/text_tittle_sty"
+
+            android:text="货物规格：" />
+
+        <TextView
+            android:id="@+id/standard"
+            style="@style/text_sty"
+            android:text="TextView" />
+
+
+    </LinearLayout>
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal">
+
+        <TextView
+
+
+            style="@style/text_tittle_sty"
+
+            android:text="发货数量：" />
+
+        <TextView
+            android:id="@+id/itemnum"
+            style="@style/text_sty"
+            android:text="TextView" />
+        <TextView
+
+
+            style="@style/text_tittle_sty"
+
+            android:text="收货数量：" />
+
+        <TextView
+            android:id="@+id/signnum"
+            style="@style/text_sty"
+            android:text="TextView" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

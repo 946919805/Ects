@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_off_line"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.gzdc.ecar.Activity.OffLineActivity">
+
+    <RadioGroup
+        android:id="@+id/check"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:background="@color/orange_solid"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/citylist"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:background="@drawable/radiobutton_left"
+            android:button="@null"
+            android:checked="true"
+            android:text="城市列表"
+            android:textColor="@color/radiobuttonselector" />
+
+        <RadioButton
+            android:id="@+id/downlist"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:background="@drawable/radiobutton_righ"
+            android:button="@null"
+            android:text="下载管理"
+            android:textColor="@color/radiobuttonselector" />
+    </RadioGroup>
+
+    <ListView
+        android:id="@+id/mapcity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/check">
+
+    </ListView>
+
+    <ListView
+        android:id="@+id/downlistview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/check"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+    </ListView>
+</RelativeLayout>

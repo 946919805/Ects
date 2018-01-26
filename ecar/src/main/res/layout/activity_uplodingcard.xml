@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.gzdc.ecar.Activity.UplodingcardActivity">
+
+
+    <ImageView
+        android:id="@+id/id_card_front"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/idcard"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="79dp"
+        android:layout_marginLeft="32dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="32dp" />
+    <ImageView
+        android:id="@+id/id_card_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:src="@mipmap/idcard"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="79dp"
+        android:layout_marginRight="29dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginEnd="29dp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:text="身份证反面"
+        app:layout_constraintBottom_toTopOf="@+id/id_card_back"
+        app:layout_constraintLeft_toLeftOf="@+id/id_card_back"
+        app:layout_constraintRight_toRightOf="@+id/id_card_back"
+        app:layout_constraintHorizontal_bias="0.489"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:text="身份证正面"
+        app:layout_constraintBottom_toTopOf="@+id/id_card_front"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintLeft_toLeftOf="@+id/id_card_front"
+        app:layout_constraintRight_toRightOf="@+id/id_card_front"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="30dp"
+        android:text="行驶证正面"
+        app:layout_constraintLeft_toLeftOf="@+id/id_card_front"
+        app:layout_constraintRight_toRightOf="@+id/id_card_front"
+        app:layout_constraintTop_toBottomOf="@+id/id_card_front"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:text="行驶证反面"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView8"
+        app:layout_constraintLeft_toLeftOf="@+id/id_card_back"
+        app:layout_constraintRight_toRightOf="@+id/id_card_back"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
+
+    <ImageView
+        android:id="@+id/drive_card_front"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/idcard"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="@+id/textView8"
+        app:layout_constraintRight_toRightOf="@+id/textView8"
+        app:layout_constraintHorizontal_bias="0.552"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView8"
+        android:layout_marginStart="8dp" />
+
+    <ImageView
+        android:id="@+id/drive_card_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/idcard"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView9"
+        app:layout_constraintRight_toRightOf="@+id/textView9"
+        app:layout_constraintLeft_toLeftOf="@+id/textView9" />
+
+    <Button
+        android:id="@+id/uplodding"
+       style="@style/button_sty"
+        android:layout_marginLeft="8dp"
+        android:text="完成"
+        app:layout_constraintLeft_toLeftOf="@+id/drive_card_front"
+        android:layout_marginTop="32dp"
+        app:layout_constraintTop_toBottomOf="@+id/drive_card_back"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="@+id/drive_card_back"
+        app:layout_constraintHorizontal_bias="0.54"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_height="30dp"
+        android:layout_width="150dp" />
+</android.support.constraint.ConstraintLayout>

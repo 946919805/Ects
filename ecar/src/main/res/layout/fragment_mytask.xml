@@ -1,0 +1,77 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.gzdc.ecar.Fragment.MytaskFragment">
+
+    <RelativeLayout
+        style="@style/Head_style"
+        android:gravity="center_vertical"
+        >
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="@color/white"
+    android:text="@string/index_mytask"
+    android:layout_centerHorizontal ="true"
+    android:layout_centerVertical="true"
+   style="@style/Head_text_style"
+    />
+        <TextView
+            android:id="@+id/vol_"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="容积"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="16dp"
+            android:background="@drawable/round_tittle_bg"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/vol_"
+            android:layout_marginLeft="5dp"/>
+        <TextView
+            android:id="@+id/vol_s"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="剩余空间"
+            android:layout_centerVertical="true"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:layout_toLeftOf="@+id/vol"
+
+            />
+
+        <TextView
+            android:id="@+id/vol"
+            android:layout_width="40dp"
+            android:layout_height="16dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/round_tittle_bg"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="5dp"/>
+    </RelativeLayout>
+
+    <ListView
+
+        android:id="@+id/task"
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/task"
+        android:divider="#00000000"
+        android:dividerHeight="15dp"
+        android:paddingTop="1dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="54dp">
+    </ListView>
+</FrameLayout>
